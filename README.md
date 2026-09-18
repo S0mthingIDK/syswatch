@@ -57,7 +57,7 @@ On distros that mark system Python as externally managed (PEP 668), add
 The CLI runs straight from the source tree on the standard library alone:
 
 ```sh
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/syswatch
+git clone https://github.com/S0mthingIDK/syswatch
 cd syswatch
 chmod +x bin/syswatch     # only needed if you did not clone via git
 ./bin/syswatch info
@@ -248,7 +248,7 @@ collection failures are reported:
 ### Setup
 
 ```sh
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/syswatch
+git clone https://github.com/S0mthingIDK/syswatch
 cd syswatch
 python3 -m venv .venv
 .venv/bin/pip install --upgrade pip
