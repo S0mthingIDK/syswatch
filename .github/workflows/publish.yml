@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/syswatch
+      url: https://pypi.org/p/syswatch-linux
     permissions:
       id-token: write
     steps:
