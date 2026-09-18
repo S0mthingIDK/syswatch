@@ -3,7 +3,7 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "syswatch"
+name = "syswatch-linux"
 version = "1.0.0"
 description = "Local Linux system diagnostics and monitoring tool with an interactive TUI and scriptable CLI"
 readme = "README.md"
