@@ -44,7 +44,7 @@ pipx install syswatch-linux             # CLI only, no TUI dependencies
 If pipx isn't available:
 
 ```sh
-python3 -m pip install --user 'syswatch[tui]'
+python3 -m pip install --user 'syswatch-linux[tui]'
 # then make sure ~/.local/bin is on your PATH
 ```
 
@@ -124,7 +124,7 @@ periodically without blocking the UI. A failed collector shows
 Troubleshooting the TUI:
 
 - `ModuleNotFoundError: textual` — reinstall with the extra:
-  `pipx install --force 'syswatch[tui]'` (or `pip install 'syswatch[tui]'`).
+  `pipx install --force 'syswatch-linux[tui]'` (or `pip install 'syswatch-linux[tui]'`).
 - Broken/garbled colors over SSH — ensure `TERM` is set correctly
   (e.g. `xterm-256color`).
 - Below ~100 columns views stack into a single column; below ~26 rows the
@@ -317,7 +317,7 @@ syswatch/
 Non-interactive syswatch is standard-library only. The optional TUI adds
 [textual](https://github.com/Textualize/textual); because Textual (as of
 8.x) relies on Rich APIs removed in Rich 15, the project pins
-`rich >=13,<15` alongside it — `pipx install 'syswatch[tui]'` resolves a
+`rich >=13,<15` alongside it — `pipx install 'syswatch-linux[tui]'` resolves a
 compatible pair automatically.
 
 ## Known limitations
