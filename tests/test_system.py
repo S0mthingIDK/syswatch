@@ -113,10 +113,12 @@ def test_cpu_frequency_from_sysfs(tmp_path):
     assert get_cpu_frequency_mhz(tmp_path / "proc", tmp_path / "sys") == 1800.0
 
 
-def test_cpu_frequency_unavailable(make_proc):
+def test_cpu_frequency_unavailable(make_proc, tmp_path):
     from syswatch.collectors.system import get_cpu_frequency_mhz
 
-    assert get_cpu_frequency_mhz(make_proc({})) is None
+    empty_sys = tmp_path / "sys"
+    empty_sys.mkdir()
+    assert get_cpu_frequency_mhz(make_proc({}), empty_sys) is None
 
 
 def test_parse_if_inet6():
