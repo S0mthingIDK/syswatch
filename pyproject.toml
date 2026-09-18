@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,24 +9,17 @@ description = "Local Linux system diagnostics and monitoring tool with an intera
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "syswatch contributors" }]
 keywords = [
-    "linux",
-    "monitoring",
-    "diagnostics",
-    "proc",
-    "sysfs",
-    "tui",
-    "cli",
-    "system",
-    "health",
+    "linux", "monitoring", "diagnostics", "proc", "sysfs",
+    "tui", "cli", "system", "health",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Intended Audience :: System Administrators",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
