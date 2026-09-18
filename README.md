@@ -5,7 +5,7 @@ terminal UI and scriptable CLI. `syswatch` reads `/proc` and `/sys`
 directly (plus a few well-known OS interfaces) and degrades gracefully when
 information cannot be collected.
 
-![dashboard](docs/screenshots/dashboard-120x40.svg)
+![dashboard](https://raw.githubusercontent.com/S0mthingIDK/syswatch/main/docs/screenshots/dashboard-120x40.svg)
 
 ## Requirements
 
@@ -164,7 +164,7 @@ Every check is always visible in the TUI Health view with its live value,
 configured threshold and status (normal / warning / critical /
 unavailable) — even when it passes:
 
-![health view](docs/screenshots/health-120x40.svg)
+![health view](https://raw.githubusercontent.com/S0mthingIDK/syswatch/main/docs/screenshots/health-120x40.svg)
 
 - **CPU usage** – sampled over `sample_delay` seconds; warning above `cpu_warning`, critical above `cpu_warning + critical_offset`
 - **memory usage** – same pattern with `ram_warning`
