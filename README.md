@@ -35,8 +35,8 @@ sudo dnf install pipx && pipx ensurepath
 sudo pacman -S python-pipx && pipx ensurepath
 
 # Install syswatch (restart your shell after the first ensurepath)
-pipx install 'syswatch[tui]'      # CLI + interactive TUI
-pipx install syswatch             # CLI only, no TUI dependencies
+pipx install 'syswatch-linux[tui]'      # CLI + interactive TUI
+pipx install syswatch-linux             # CLI only, no TUI dependencies
 ```
 
 ### Alternative: pip in a user environment
