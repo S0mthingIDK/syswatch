@@ -1,7 +1,7 @@
 # syswatch
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=syswatch&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Linux+system+diagnostics+and+monitoring&descAlignY=58&descSize=18" alt="syswatch" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=syswatch&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Linux+system+diagnostics+and+monitoring&descAlignY=60&descSize=18&width=1000" alt="syswatch" width="100%" />
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/platform-Linux-0f2027?logo=linux&logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/dependencies-none_(CLI)-brightgreen" alt="Zero dependencies">
-  <img src="https://img.shields.io/pypi/v/syswatch-linux?label=PyPI&logo=pypi&logoColor=white" alt="PyPI">
+  <img src="https://img.shields.io/badge/pypi-v1.0.0-blue?logo=pypi&logoColor=white" alt="PyPI">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License">
 </p>
 
