@@ -1,11 +1,67 @@
 # syswatch
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=syswatch&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Linux+system+diagnostics+%26+monitoring&descAlignY=58&descSize=18" alt="syswatch" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/S0mthingIDK/syswatch">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=38BDF8&center=true&vCenter=true&width=600&lines=Real-time+Linux+diagnostics;Interactive+terminal+UI;Scriptable+CLI+%E2%80%94+zero+dependencies;Reads+%2Fproc+and+%2Fsys+directly" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white" alt="Python 3.11+">
+  <img src="https://img.shields.io/badge/platform-Linux-0f2027?logo=linux&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/dependencies-none_(CLI)-brightgreen" alt="Zero dependencies">
+  <img src="https://img.shields.io/pypi/v/syswatch-linux?label=PyPI&logo=pypi&logoColor=white" alt="PyPI">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License">
+</p>
+
+<p align="center">
+  <code>pipx install 'syswatch-linux[tui]'</code>
+</p>
+
+---
+
 A local Linux system diagnostics and monitoring tool with an interactive
 terminal UI and scriptable CLI. `syswatch` reads `/proc` and `/sys`
 directly (plus a few well-known OS interfaces) and degrades gracefully when
 information cannot be collected.
 
-![dashboard](https://raw.githubusercontent.com/S0mthingIDK/syswatch/main/docs/screenshots/dashboard-120x40.svg)
+<p align="center">
+  <img src="docs/demo.svg" alt="syswatch animated terminal demo" width="720">
+</p>
+
+## What it does
+
+| | |
+|---|---|
+| **Live TUI** | CPU, memory, disks, network graphs updating every second |
+| **Process explorer** | Sortable, filterable table with per-process details pane |
+| **Health checks** | CPU, RAM, swap, disk, load, zombies, systemd, gateway — all thresholded |
+| **Zero deps CLI** | `info`, `monitor`, `ps`, `health`, `report` all run on stdlib alone |
+| **Hermetic tests** | Injectable `/proc` roots — no live system required |
+
+<!-- readmecast:start -->
+```console
+$ syswatch info
+Hostname    debian
+OS          Debian GNU/Linux 12 (bookworm)
+Kernel      6.1.0-34-amd64
+CPU         Intel(R) Core(TM) i7-10750H @ 2.60GHz
+RAM         3.8 GiB total · 1.1 GiB available
+$ syswatch health
+OVERALL HEALTH: HEALTHY — 8/8 checks normal
+$ syswatch ps -s cpu -n 5
+PID    Name           S    CPU%   MEM%   RSS
+4806   opencode       R    99.0   24.7%  1.2 GiB
+17343  python         S    42.9   1.6%   82 MiB
+1886   gnome-shell    S    33.0   9.4%   470 MiB
+2500   gnome-terminal S    13.2   1.5%   76 MiB
+1      systemd        S    0.0    0.3%   12 MiB
+```
+<!-- readmecast:end -->
 
 ## Requirements
 
@@ -119,7 +175,7 @@ Keyboard shortcuts:
 Everything is live: CPU/memory/network graphs update every refresh interval,
 the process table rescans in a background thread, and health checks re-run
 periodically without blocking the UI. A failed collector shows
-“unavailable” in its panel instead of crashing the app.
+"unavailable" in its panel instead of crashing the app.
 
 Troubleshooting the TUI:
 
