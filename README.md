@@ -30,7 +30,7 @@ directly (plus a few well-known OS interfaces) and degrades gracefully when
 information cannot be collected.
 
 <p align="center">
-  <img src="docs/demo.svg" alt="syswatch animated terminal demo" width="720">
+  <img src="docs/screenshots/dashboard-120x40.svg" alt="syswatch dashboard view" width="100%">
 </p>
 
 ## What it does
@@ -155,12 +155,31 @@ syswatch            # pipx install
 .venv/bin/syswatch  # from a checkout
 ```
 
-Views: **[1] Dashboard** (CPU/memory/disks/network + health strip),
-**[2] Processes** (live table, filter, details pane), **[3] System**
-(host/CPU/memory/filesystem/network cards), **[4] Health** (every check
-with live value and threshold), **[5] About**.
+### [1] Dashboard
+CPU, memory, disks, and network graphs with a live health strip.
+<p align="center">
+  <img src="docs/screenshots/dashboard-120x40.svg" alt="Dashboard View" width="100%">
+</p>
 
-Keyboard shortcuts:
+### [2] Processes
+Live process table with filtering, sorting, and a detailed side pane.
+<p align="center">
+  <img src="docs/screenshots/processes-120x40.svg" alt="Processes View" width="100%">
+</p>
+
+### [3] System
+Host identity, CPU, memory, filesystem, and network cards.
+<p align="center">
+  <img src="docs/screenshots/system-120x40.svg" alt="System View" width="100%">
+</p>
+
+### [4] Health
+Every check with its live value, threshold, status, and notes — passing included.
+<p align="center">
+  <img src="docs/screenshots/health-120x40.svg" alt="Health View" width="100%">
+</p>
+
+### Keyboard shortcuts
 
 | Key     | Action                                            |
 |---------|---------------------------------------------------|
@@ -219,8 +238,6 @@ jobs, scripts and CI.
 Every check is always visible in the TUI Health view with its live value,
 configured threshold and status (normal / warning / critical /
 unavailable) — even when it passes:
-
-![health view](https://raw.githubusercontent.com/S0mthingIDK/syswatch/main/docs/screenshots/health-120x40.svg)
 
 - **CPU usage** – sampled over `sample_delay` seconds; warning above `cpu_warning`, critical above `cpu_warning + critical_offset`
 - **memory usage** – same pattern with `ram_warning`
