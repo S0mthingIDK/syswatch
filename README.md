@@ -164,13 +164,13 @@ CPU, memory, disks, and network graphs with a live health strip.
 ### [2] Processes
 Live process table with filtering, sorting, and a detailed side pane.
 <p align="center">
-  <img src="docs/screenshots/processes-120x40.svg" alt="Processes View" width="100%">
+  <img src="docs/screenshots/processes-100x30.svg" alt="Processes View" width="100%">
 </p>
 
 ### [3] System
 Host identity, CPU, memory, filesystem, and network cards.
 <p align="center">
-  <img src="docs/screenshots/system-120x40.svg" alt="System View" width="100%">
+  <img src="docs/screenshots/system-80x24.svg" alt="System View" width="100%">
 </p>
 
 ### [4] Health
@@ -207,7 +207,7 @@ Troubleshooting the TUI:
   The process details pane appears from ~100 columns (`d` toggles it).
 - On very wide terminals (>160 columns) panels regroup into balanced
   multi-column grids instead of stretching; content stays centered.
-
+  
 ## Commands
 
 | Command   | Purpose |
