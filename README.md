@@ -1,20 +1,20 @@
 # syswatch
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=syswatch&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Linux+system+diagnostics+%26+monitoring&descAlignY=58&descSize=18" alt="syswatch" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0f2027,50:203a43,100:2c5364&amp;height=180&amp;section=header&amp;text=syswatch&amp;fontSize=70&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Linux+system+diagnostics+%26+monitoring&amp;descAlignY=58&amp;descSize=18" alt="syswatch" width="100%" />
 </p>
 
 <p align="center">
   <a href="https://github.com/S0mthingIDK/syswatch">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=38BDF8&center=true&vCenter=true&width=600&lines=Real-time+Linux+diagnostics;Interactive+terminal+UI;Scriptable+CLI+%E2%80%94+zero+dependencies;Reads+%2Fproc+and+%2Fsys+directly" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=22&amp;duration=3000&amp;pause=800&amp;color=38BDF8&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=Real-time+Linux+diagnostics;Interactive+terminal+UI;Scriptable+CLI+%E2%80%94+zero+dependencies;Reads+%2Fproc+and+%2Fsys+directly" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white" alt="Python 3.11+">
-  <img src="https://img.shields.io/badge/platform-Linux-0f2027?logo=linux&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/python-3.11%2B-blue?logo=python&amp;logoColor=white" alt="Python 3.11+">
+  <img src="https://img.shields.io/badge/platform-Linux-0f2027?logo=linux&amp;logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/dependencies-none_(CLI)-brightgreen" alt="Zero dependencies">
-  <img src="https://img.shields.io/pypi/v/syswatch-linux?label=PyPI&logo=pypi&logoColor=white" alt="PyPI">
+  <img src="https://img.shields.io/pypi/v/syswatch-linux?label=PyPI&amp;logo=pypi&amp;logoColor=white" alt="PyPI">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License">
 </p>
 
